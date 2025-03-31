@@ -1,3 +1,12 @@
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from the .env file
+load_dotenv()
+
+# Print the token to confirm it's loaded correctly
+print("API Proxy Token:", os.getenv("AIPROXY_TOKEN"))
+
 from fastapi import FastAPI, Form, File, UploadFile  # type: ignore
 from fastapi.responses import HTMLResponse  # type: ignore
 from fastapi.middleware.cors import CORSMiddleware  # type: ignore
