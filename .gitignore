@@ -13,9 +13,7 @@ __pycache__/
 # VS Code settings
 .vscode/
 
-# Ignore environment files (optional)
-.env
-*.env
+
 
 # Ignore logs and temp files (optional)
 *.log
